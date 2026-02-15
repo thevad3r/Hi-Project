@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Контакты | Hi-Project</title>
+</head>
+<body class="font-sans antialiased text-gray-600">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4 md:py-6">
+                <a href="/" class="text-2xl font-bold text-sky-600">
+                    ⚡
+                </a>
+
+                <nav class="flex flex-row gap-3 sm:gap-8">
+                    <a href="/" class="hover:text-sky-600 transition">Главная</a>
+                    <a href="/" class="hover:text-sky-600 transition">Каталог</a>
+                    <a href="/contacts.html" class="text-sky-600 transition">Контакты</a>
+                    <a href="../#faq" class="hover:text-sky-600 transition">FAQ</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <a href="/contacts.html" class="hidden sm:flex bg-sky-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-600 transition">
+                         Оставить заявку
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="px-4 py-16 bg-white">
+        <div class="container mx-auto">
+
+            <h1 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">Контакты</h1>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+
+                <div class="text-gray-600 bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold text-sky-500 mb-6">Наши контакты</h2>
+                    
+                    <div class="space-y-5">
+
+                        <div class="flex items-start">
+                            <span class="text-xl mr-4">📍</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Адрес</h3>
+                                <p>г. Москва, ул. Примерная, д. 1</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-sky-500 text-xl mr-4">📞</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Телефон</h3>
+                                <p>
+                                    <a href="tel:+79991234567" class="hover:text-sky-600">+7 (999) 123-45-67</a>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-sky-500 text-xl mr-4">✉️</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Email</h3>
+                                <p>
+                                    <a href="mailto:info@hi-project.ru" class="hover:text-sky-600">info@hi-project.ru</a>
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start">
+                            <span class="text-sky-500 text-xl mr-4">🕒</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800">Время работы</h3>
+                                <p>
+                                    <p>Ежедневно 8:00–22:00</p>
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <span class="text-sky-500 text-xl mr-4">🌐</span>
+                            <div>
+                                <h3 class="font-semibold text-gray-800 mb-2">Мы в соцсетях</h3>
+                                <div class="flex space-x-4">
+                                    <a href="#" class="bg-gray-100 p-2 rounded-full hover:bg-sky-100 transition">
+                                        <svg class="w-5 h-5 text-sky-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d=""/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="bg-gray-100 p-2 rounded-full hover:bg-sky-100 transition">
+                                        <svg class="w-5 h-5 text-sky-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d=""/>
+                                        </svg>
+                                    </a>
+                                    <a href="#" class="bg-gray-100 p-2 rounded-full hover:bg-sky-100 transition">
+                                        <svg class="w-5 h-5 text-sky-600" fill="currentColor" viewBox="0 0 24 24">
+                                            <path d=""/>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-gray-50 p-8 rounded-lg shadow-sm">
+                    <h2 class="text-2xl font-bold text-sky-500 mb-6">Напишите нам</h2>
+                    
+                    <form action="#" method="post" class="space-y-5">
+
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-800 mb-1">Имя <span class="text-red-500">*</span></label>
+                            <input type="text" id="name" name="name" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg transition">
+                        </div>
+
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-800 mb-1">Email <span class="text-red-500">*</span></label>
+                            <input type="email" id="email" name="email" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg transition">
+                        </div>
+                        
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-gray-800 mb-1">Тема</label>
+                            <select id="subject" name="subject"
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg transition bg-gray-50">
+                                <option value="general">Общий вопрос</option>
+                                <option value="services">Вопрос по услугам</option>
+                                <option value="cooperation">Сотрудничество</option>
+                                <option value="complaint">Жалоба</option>
+                                <option value="other">Другое</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-800 mb-1">Сообщение <span class="text-red-500">*</span></label>
+                            <textarea id="message" name="message" rows="4" required
+                                class="w-full px-4 py-2 border border-gray-300 rounded-lg transition"></textarea>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <input type="checkbox" id="consent" name="consent" required
+                                class="mr-3 w-4 h-4 text-sky-600 border-gray-300 rounded">
+                            <label for="consent" class="text-sm text-gray-600">
+                                Я согласен на обработку персональных данных <span class="text-red-500">*</span>
+                            </label>
+                        </div>
+
+                        <button type="submit"
+                            class="w-full bg-sky-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-600 transition">
+                            Отправить сообщение
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-sky-900 text-sky-300 px-4 py-16">
+        <div class="container mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4">
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">⚡ Hi-Project</h3>
+                    <p class="text-sm leading-relaxed">
+                        Профессиональный ремонт компьютеров, ноутбуков и&nbsp;оргтехники с выездом на дом. 
+                        Работаем быстро, качественно, с гарантией.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Меню</h3>
+                    <ul class="flex flex-col space-y-2 text-sm">
+                        <a href="/" class="hover:text-sky-600 transition">Главная</a>
+                        <a href="/" class="hover:text-sky-600 transition">Каталог</a>
+                        <a href="/contacts.html" class="hover:text-sky-600 transition">Контакты</a>
+                        <a href="./#faq" class="hover:text-sky-600 transition">FAQ</a>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Контакты</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <span class="mr-2">📞</span>
+                            <a href="tel:+79991234567" class="hover:text-sky-400 transition">+7 (999) 123-45-67</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">✉️</span>
+                            <a href="mailto:info@hi-project.ru" class="hover:text-sky-400 transition">info@hi-project.ru</a>
+                        </li>
+                        <li class="flex items-start text-sky-200">
+                            <span class="mr-2">📍</span>
+                            <span>г. Москва, ул. Примерная, д. 1</span>
+                        </li>
+                        <li class="flex items-start text-sky-200">
+                            <span class="mr-2">🕒</span>
+                            <span>Ежедневно 8:00–22:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Мы в соцсетях</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-sky-800 p-2 rounded-full hover:bg-sky-600 transition">
+                            <span class="sr-only">VK</span>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d=""/></svg>
+                        </a>
+                        <a href="#" class="bg-sky-800 p-2 rounded-full hover:bg-sky-600 transition">
+                            <span class="sr-only">Telegram</span>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d=""/></svg>
+                        </a>
+                        <a href="#" class="bg-sky-800 p-2 rounded-full hover:bg-sky-600 transition">
+                            <span class="sr-only">WhatsApp</span>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d=""/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-sky-600 mt-8 pt-6 text-sm text-sky-600">
+                © 2025 Hi-Project. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

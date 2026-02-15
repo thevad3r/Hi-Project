@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>Hi-Project</title>
+    <title>Главная | Hi-Project</title>
 </head>
 <body class="font-sans antialiased text-gray-600">
 
@@ -16,13 +16,14 @@
                 </a>
 
                 <nav class="flex flex-row gap-3 sm:gap-8">
-                    <a href="" class="hover:text-sky-600 transition">Главная</a>
-                    <a href="" class="hover:text-sky-600 transition">Каталог</a>
-                    <a href="" class="hover:text-sky-600 transition">Контакты</a>
+                    <a href="/" class="text-sky-600 transition">Главная</a>
+                    <a href="/" class="hover:text-sky-600 transition">Каталог</a>
+                    <a href="/contacts.html" class="hover:text-sky-600 transition">Контакты</a>
+                    <a href="/#faq" class="hover:text-sky-600 transition">FAQ</a>
                 </nav>
 
                 <div class="flex items-center space-x-4">
-                    <a href="#order" class="hidden sm:flex bg-sky-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-600 transition">
+                    <a href="/contacts.html" class="hidden sm:flex bg-sky-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-600 transition">
                          Оставить заявку
                     </a>
                 </div>
@@ -43,7 +44,7 @@
                             Бесплатная диагностика при ремонте. Работаем по всему городу.
                         </p>
                         <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-                            <a href="#order" class="bg-white text-sky-500 px-6 py-2 rounded-full font-semibold hover:bg-sky-100 transition">
+                            <a href="/contacts.html" class="bg-white text-sky-500 px-6 py-2 rounded-full font-semibold hover:bg-sky-100 transition">
                                 Оставить заявку
                             </a>
                         </div>
@@ -262,77 +263,111 @@
 
         <section id="faq" class="bg-white px-4 py-16">
             <div class="container mx-auto">
-
                 <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
                     Часто задаваемые вопросы
                 </h2>
             
-                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
-                
-                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
-                            <span class="text-sky-500 mr-2">❓</span>
-                            Сколько стоит диагностика?
-                        </h3>
-                        <p class="text-gray-600 pl-7">
-                            Диагностика проводится бесплатно при согласии на ремонт. 
-                            Если вы откажетесь от ремонта, диагностика оплачивается отдельно — 300 рублей.
-                        </p>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4 items-start">
+                    <!-- Вопрос 1 -->
+                    <div class="faq-item bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <button class="faq-question w-full text-left flex items-start justify-between focus:outline-none">
+                            <span class="flex items-start">
+                                <span class="text-sky-500 mr-2">❓</span>
+                                <h3 class="text-lg font-bold text-sky-500">Сколько стоит диагностика?</h3>
+                            </span>
+                            <span class="faq-icon ml-4 text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer mt-3 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Диагностика проводится бесплатно при согласии на ремонт. 
+                                Если вы откажетесь от ремонта, диагностика оплачивается отдельно — 300 рублей.
+                            </p>
+                        </div>
                     </div>
                 
-                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
-                            <span class="text-sky-500 mr-2">❓</span>
-                            Выезжаете ли вы за город?
-                        </h3>
-                        <p class="text-gray-600 pl-7">
-                            Да, мы работаем в радиусе 30 км от города. Стоимость выезда уточняйте у оператора 
-                            (обычно фиксированная надбавка к заказу).
-                        </p>
+                    <!-- Вопрос 2 -->
+                    <div class="faq-item bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <button class="faq-question w-full text-left flex items-start justify-between focus:outline-none">
+                            <span class="flex items-start">
+                                <span class="text-sky-500 mr-2">❓</span>
+                                <h3 class="text-lg font-bold text-sky-500">Выезжаете ли вы за город?</h3>
+                            </span>
+                            <span class="faq-icon ml-4 text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer mt-3 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Да, мы работаем в радиусе 30 км от города. Стоимость выезда уточняйте у оператора 
+                                (обычно фиксированная надбавка к заказу).
+                            </p>
+                        </div>
                     </div>
                 
-                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
-                            <span class="text-sky-500 mr-2">❓</span>
-                            Даете ли гарантию на работу?
-                        </h3>
-                        <p class="text-gray-600 pl-7">
-                            Да, на все виды работ мы предоставляем гарантию до 2 лет 
-                            (зависит от типа ремонта). Гарантия оформляется в договоре.
-                        </p>
+                    <!-- Вопрос 3 -->
+                    <div class="faq-item bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <button class="faq-question w-full text-left flex items-start justify-between focus:outline-none">
+                            <span class="flex items-start">
+                                <span class="text-sky-500 mr-2">❓</span>
+                                <h3 class="text-lg font-bold text-sky-500">Даете ли гарантию на работу?</h3>
+                            </span>
+                            <span class="faq-icon ml-4 text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer mt-3 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Да, на все виды работ мы предоставляем гарантию до 2 лет 
+                                (зависит от типа ремонта). Гарантия оформляется в договоре.
+                            </p>
+                        </div>
                     </div>
                 
-                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
-                            <span class="text-sky-500 mr-2">❓</span>
-                            Какие марки вы ремонтируете?
-                        </h3>
-                        <p class="text-gray-600 pl-7">
-                            Мы работаем со всеми популярными брендами: Asus, Acer, HP, Lenovo, Dell, Apple и другие. 
-                            Ограничений по маркам нет.
-                        </p>
+                    <!-- Вопрос 4 -->
+                    <div class="faq-item bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <button class="faq-question w-full text-left flex items-start justify-between focus:outline-none">
+                            <span class="flex items-start">
+                                <span class="text-sky-500 mr-2">❓</span>
+                                <h3 class="text-lg font-bold text-sky-500">Какие марки вы ремонтируете?</h3>
+                            </span>
+                            <span class="faq-icon ml-4 text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer mt-3 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Мы работаем со всеми популярными брендами: Asus, Acer, HP, Lenovo, Dell, Apple и другие. 
+                                Ограничений по маркам нет.
+                            </p>
+                        </div>
                     </div>
                 
-                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
-                            <span class="text-sky-500 mr-2">❓</span>
-                            Можно ли присутствовать при ремонте?
-                        </h3>
-                        <p class="text-gray-600 pl-7">
-                            Конечно! Вы можете наблюдать за процессом и задавать вопросы мастеру. 
-                            Мы за прозрачность и ваше спокойствие.
-                        </p>
+                    <!-- Вопрос 5 -->
+                    <div class="faq-item bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <button class="faq-question w-full text-left flex items-start justify-between focus:outline-none">
+                            <span class="flex items-start">
+                                <span class="text-sky-500 mr-2">❓</span>
+                                <h3 class="text-lg font-bold text-sky-500">Можно ли присутствовать при ремонте?</h3>
+                            </span>
+                            <span class="faq-icon ml-4 text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer mt-3 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Конечно! Вы можете наблюдать за процессом и задавать вопросы мастеру. 
+                                Мы за прозрачность и ваше спокойствие.
+                            </p>
+                        </div>
                     </div>
                 
-                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
-                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
-                            <span class="text-sky-500 mr-2">❓</span>
-                            Как быстро приедет мастер?
-                        </h3>
-                        <p class="text-gray-600 pl-7">
-                            Выезжаем в день обращения. Среднее время ожидания — 60-90 минут 
-                            (в зависимости от загруженности и удаленности).
-                        </p>
+                    <!-- Вопрос 6 -->
+                    <div class="faq-item bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <button class="faq-question w-full text-left flex items-start justify-between focus:outline-none">
+                            <span class="flex items-start">
+                                <span class="text-sky-500 mr-2">❓</span>
+                                <h3 class="text-lg font-bold text-sky-500">Как быстро приедет мастер?</h3>
+                            </span>
+                            <span class="faq-icon ml-4 text-sky-500 transition-transform duration-300">▼</span>
+                        </button>
+                        <div class="faq-answer mt-3 hidden">
+                            <p class="text-gray-600 pl-7">
+                                Выезжаем в день обращения. Среднее время ожидания — 60-90 минут 
+                                (в зависимости от загруженности и удаленности).
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -355,10 +390,11 @@
 
                 <div>
                     <h3 class="text-white text-lg font-semibold mb-4">Меню</h3>
-                    <ul class="space-y-2 text-sm">
-                        <li><a href="#" class="hover:text-sky-400 transition">Главная</a></li>
-                        <li><a href="#" class="hover:text-sky-400 transition">Каталог</a></li>
-                        <li><a href="#" class="hover:text-sky-400 transition">Контакты</a></li>
+                    <ul class="flex flex-col space-y-2 text-sm">
+                        <a href="/" class="hover:text-sky-600 transition">Главная</a>
+                        <a href="/" class="hover:text-sky-600 transition">Каталог</a>
+                        <a href="/contacts.html" class="hover:text-sky-600 transition">Контакты</a>
+                        <a href="#faq" class="hover:text-sky-600 transition">FAQ</a>
                     </ul>
                 </div>
 
@@ -409,6 +445,29 @@
         </div>
     </footer>
 
-    <!-- Простой скрипт для мобильного меню (по желанию, здесь не реализован) -->
+    <script>
+        (function() {
+            // Находим все элементы аккордеона
+            const faqItems = document.querySelectorAll('.faq-item');
+        
+            faqItems.forEach(item => {
+                const questionBtn = item.querySelector('.faq-question');
+                const answer = item.querySelector('.faq-answer');
+                const icon = item.querySelector('.faq-icon');
+            
+                questionBtn.addEventListener('click', () => {
+                    // Переключаем класс hidden у ответа
+                    answer.classList.toggle('hidden');
+                    
+                    // Поворачиваем иконку (стрелку) на 180 градусов при открытии
+                    if (answer.classList.contains('hidden')) {
+                        icon.style.transform = 'rotate(0deg)';
+                    } else {
+                        icon.style.transform = 'rotate(180deg)';
+                    }
+                });
+            });
+        })();
+    </script>
 </body>
 </html>
