@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Hi-Project</title>
+</head>
+<body class="font-sans antialiased text-gray-600">
+
+    <header class="bg-white shadow-sm sticky top-0 z-10">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center py-4 md:py-6">
+                <a href="/" class="text-2xl font-bold text-sky-600">
+                    ⚡
+                </a>
+
+                <nav class="flex flex-row gap-3 sm:gap-8">
+                    <a href="" class="hover:text-sky-600 transition">Главная</a>
+                    <a href="" class="hover:text-sky-600 transition">Каталог</a>
+                    <a href="" class="hover:text-sky-600 transition">Контакты</a>
+                </nav>
+
+                <div class="flex items-center space-x-4">
+                    <a href="#order" class="hidden sm:flex bg-sky-500 text-white px-6 py-2 rounded-full font-semibold hover:bg-sky-600 transition">
+                         Оставить заявку
+                    </a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="px-4 py-16 text-white bg-sky-500">
+            <div class="container mx-auto">
+                <div class="flex flex-col md:flex-row items-center justify-between gap-12">
+                    <div class="flex-1 w-full md:max-w-1/2 text-center md:text-left">
+                        <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-8">
+                            Ремонт компьютеров и&nbsp;ноутбуков в&nbsp;Москве
+                        </h1>
+                        <p class="text-xl mb-6 text-sky-100">
+                            Бесплатная диагностика при ремонте. Работаем по всему городу.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+                            <a href="#order" class="bg-white text-sky-500 px-6 py-2 rounded-full font-semibold hover:bg-sky-100 transition">
+                                Оставить заявку
+                            </a>
+                        </div>
+                        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mt-12 text-center md:text-left">
+                            <div>
+                                <div class="text-3xl font-bold">12+</div>
+                                <div class="text-sky-200">лет опыта</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">2500+</div>
+                                <div class="text-sky-200">ремонтов</div>
+                            </div>
+                            <div>
+                                <div class="text-3xl font-bold">2 года</div>
+                                <div class="text-sky-200">гарантии</div>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="w-full sm:max-w-1/2" src="./assets/img/Laptop.png" alt="">
+                </div>
+            </div>
+        </section>
+
+        <section id="advantages" class="px-4 py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+                    Почему выбирают нас?
+                </h2>
+            
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+                
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center mb-6">
+                            <span class="text-3xl mr-2">🔒</span>
+                            <h3 class="text-xl font-bold text-sky-500">Надежно</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-sky-500 mr-3">—</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Гарантия до 2 лет</h4>
+                                    <p class="text-gray-600 text-sm">Все работы закрепляем договором.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-sky-500 mr-3">—</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Бесплатная диагностика</h4>
+                                    <p class="text-gray-600 text-sm">Проведем при вас и составим точную смету.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center mb-6">
+                            <span class="text-3xl mr-2">⚡</span>
+                            <h3 class="text-xl font-bold text-sky-500">Быстро</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-sky-500 mr-3">—</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Выезд в день обращения</h4>
+                                    <p class="text-gray-600 text-sm">Решим вашу проблему не откладывая.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-sky-500 mr-3">—</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Ремонт от 30 минут</h4>
+                                    <p class="text-gray-600 text-sm">Не придется надолго расставаться с техникой.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-8 rounded-lg shadow-sm hover:shadow-xl transition">
+                        <div class="flex items-center mb-6">
+                            <span class="text-3xl mr-2">🔧</span>
+                            <h3 class="text-xl font-bold text-sky-500">Профессионально</h3>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <span class="text-sky-500 mr-3">—</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Огромный опыт работы</h4>
+                                    <p class="text-gray-600 text-sm">Мы успешно работаем уже 20 лет.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start">
+                                <span class="text-sky-500 mr-3">—</span>
+                                <div>
+                                    <h4 class="font-bold text-gray-800">Честные рекомендации</h4>
+                                    <p class="text-gray-600 text-sm">Если ремонт невыгоден, мы скажем прямо.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="px-4 py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+                    Наши услуги
+                </h2>
+            
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 auto-rows-fr">
+                
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-xl transition flex flex-col">
+                        <div class="text-4xl mb-3">🖥️</div>
+                        <h3 class="text-xl font-bold text-sky-500 mb-2">Ремонт ПК</h3>
+                        <p class="text-gray-600 text-sm flex-grow">Диагностика, замена комплектующих, ремонт после заливки, сборка игровых компьютеров.</p>
+                        <span class="mt-4 text-sky-500 font-medium">от 500 ₽</span>
+                    </div>
+                
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-xl transition flex flex-col">
+                        <div class="text-4xl mb-3">💻</div>
+                        <h3 class="text-xl font-bold text-sky-500 mb-2">Ремонт ноутбуков</h3>
+                        <p class="text-gray-600 text-sm flex-grow">Замена матрицы, клавиатуры, чистка системы охлаждения, ремонт материнской платы.</p>
+                        <span class="mt-4 text-sky-500 font-medium">от 700 ₽</span>
+                    </div>
+                
+                    <div class="bg-sky-500 p-6 rounded-lg shadow-sm md:row-span-2 flex flex-col justify-between items-start text-white row-start-4">
+                        <div>
+                            <h3 class="text-2xl font-bold mb-2">Не нашли нужную?</h3>
+                            <p class="text-sky-100 mb-6">
+                                Мы предоставляем ещё множество услуг, ознакомьтесь со всеми!
+                            </p>
+                        </div>
+                        
+                        <a href="" class="bg-white text-sky-500 px-6 py-2 rounded-full font-semibold hover:bg-sky-100 transition">
+                            Перейти в каталог
+                        </a>    
+                    </div>
+                
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-xl transition flex flex-col md:col-span-2">
+                        <div class="text-4xl mb-3">💾</div>
+                        <h3 class="text-xl font-bold text-sky-500 mb-2">Восстановление данных</h3>
+                        <p class="text-gray-600 text-sm flex-grow">
+                            Восстанавливаем информацию с жестких дисков, SSD, флешек и RAID-массивов после удаления, форматирования или физических повреждений. 
+                            Работаем в чистых условиях, гарантия конфиденциальности.
+                        </p>
+                        <span class="mt-4 text-sky-500 font-medium">от 1500 ₽</span>
+                    </div>
+                
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="px-4 py-16 bg-white">
+            <div class="container mx-auto">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+                    Отзывы наших клиентов
+                </h2>
+            
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-xl transition flex flex-col">
+                        <div class="flex items-center mb-4">
+
+                            <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center text-sky-500 font-bold text-xl mr-4">
+                                АК
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Алексей К.</h4>
+                                <p class="text-sm text-gray-500">Ремонт ноутбука</p>
+                            </div>
+                        </div>
+
+                        <p class="text-gray-600 flex-grow">Ноутбук перестал включаться. Мастер приехал быстро, диагностика бесплатно, оказалась проблема с питанием. Починили за час, дали гарантию. Очень доволен!</p>
+
+                        <div class="flex mt-4 text-yellow-400">
+                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                        </div>
+                    </div>
+                
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-xl transition flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center text-sky-500 font-bold text-xl mr-4">
+                                ЕВ
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Елена В.</h4>
+                                <p class="text-sm text-gray-500">Чистка от пыли</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 flex-grow">Старый компьютер сильно грелся и шумел. Сделали чистку и замену термопасты. Работает как новый, тихо и быстро. Спасибо за оперативность и честную цену!</p>
+                        <div class="flex mt-4 text-yellow-400">
+                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                        </div>
+                    </div>
+                
+                    <div class="bg-gray-50 p-6 rounded-lg shadow-sm hover:shadow-xl transition flex flex-col">
+                        <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 bg-sky-100 rounded-full flex items-center justify-center text-sky-500 font-bold text-xl mr-4">
+                                ДМ
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-800">Дмитрий М.</h4>
+                                <p class="text-sm text-gray-500">Восстановление данных</p>
+                            </div>
+                        </div>
+                        <p class="text-gray-600 flex-grow">Упал внешний диск со всеми семейными фото. Думал всё пропало. Ребята смогли восстановить почти все данные, очень аккуратно. Цена адекватная, рекомендую.</p>
+                        <div class="flex mt-4 text-yellow-400">
+                            <span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span><span>⭐</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="faq" class="bg-white px-4 py-16">
+            <div class="container mx-auto">
+
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-12">
+                    Часто задаваемые вопросы
+                </h2>
+            
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
+                            <span class="text-sky-500 mr-2">❓</span>
+                            Сколько стоит диагностика?
+                        </h3>
+                        <p class="text-gray-600 pl-7">
+                            Диагностика проводится бесплатно при согласии на ремонт. 
+                            Если вы откажетесь от ремонта, диагностика оплачивается отдельно — 300 рублей.
+                        </p>
+                    </div>
+                
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
+                            <span class="text-sky-500 mr-2">❓</span>
+                            Выезжаете ли вы за город?
+                        </h3>
+                        <p class="text-gray-600 pl-7">
+                            Да, мы работаем в радиусе 30 км от города. Стоимость выезда уточняйте у оператора 
+                            (обычно фиксированная надбавка к заказу).
+                        </p>
+                    </div>
+                
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
+                            <span class="text-sky-500 mr-2">❓</span>
+                            Даете ли гарантию на работу?
+                        </h3>
+                        <p class="text-gray-600 pl-7">
+                            Да, на все виды работ мы предоставляем гарантию до 2 лет 
+                            (зависит от типа ремонта). Гарантия оформляется в договоре.
+                        </p>
+                    </div>
+                
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
+                            <span class="text-sky-500 mr-2">❓</span>
+                            Какие марки вы ремонтируете?
+                        </h3>
+                        <p class="text-gray-600 pl-7">
+                            Мы работаем со всеми популярными брендами: Asus, Acer, HP, Lenovo, Dell, Apple и другие. 
+                            Ограничений по маркам нет.
+                        </p>
+                    </div>
+                
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
+                            <span class="text-sky-500 mr-2">❓</span>
+                            Можно ли присутствовать при ремонте?
+                        </h3>
+                        <p class="text-gray-600 pl-7">
+                            Конечно! Вы можете наблюдать за процессом и задавать вопросы мастеру. 
+                            Мы за прозрачность и ваше спокойствие.
+                        </p>
+                    </div>
+                
+                    <div class="bg-gray-50 p-5 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-bold text-sky-500 mb-2 flex items-start">
+                            <span class="text-sky-500 mr-2">❓</span>
+                            Как быстро приедет мастер?
+                        </h3>
+                        <p class="text-gray-600 pl-7">
+                            Выезжаем в день обращения. Среднее время ожидания — 60-90 минут 
+                            (в зависимости от загруженности и удаленности).
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-sky-900 text-sky-300 px-4 py-16">
+        <div class="container mx-auto">
+
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-4">
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">⚡ Hi-Project</h3>
+                    <p class="text-sm leading-relaxed">
+                        Профессиональный ремонт компьютеров, ноутбуков и&nbsp;оргтехники с выездом на дом. 
+                        Работаем быстро, качественно, с гарантией.
+                    </p>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Меню</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li><a href="#" class="hover:text-sky-400 transition">Главная</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Каталог</a></li>
+                        <li><a href="#" class="hover:text-sky-400 transition">Контакты</a></li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Контакты</h3>
+                    <ul class="space-y-2 text-sm">
+                        <li class="flex items-start">
+                            <span class="mr-2">📞</span>
+                            <a href="tel:+79991234567" class="hover:text-sky-400 transition">+7 (999) 123-45-67</a>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="mr-2">✉️</span>
+                            <a href="mailto:info@hi-project.ru" class="hover:text-sky-400 transition">info@hi-project.ru</a>
+                        </li>
+                        <li class="flex items-start text-sky-200">
+                            <span class="mr-2">📍</span>
+                            <span>г. Москва, ул. Примерная, д. 1</span>
+                        </li>
+                        <li class="flex items-start text-sky-200">
+                            <span class="mr-2">🕒</span>
+                            <span>Ежедневно 8:00–22:00</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div>
+                    <h3 class="text-white text-lg font-semibold mb-4">Мы в соцсетях</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="bg-sky-800 p-2 rounded-full hover:bg-sky-600 transition">
+                            <span class="sr-only">VK</span>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+                        </a>
+                        <a href="#" class="bg-sky-800 p-2 rounded-full hover:bg-sky-600 transition">
+                            <span class="sr-only">Telegram</span>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+                        </a>
+                        <a href="#" class="bg-sky-800 p-2 rounded-full hover:bg-sky-600 transition">
+                            <span class="sr-only">WhatsApp</span>
+                            <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="..."/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="border-t border-sky-600 mt-8 pt-6 text-sm text-sky-600">
+                © 2025 Hi-Project. Все права защищены.
+            </div>
+        </div>
+    </footer>
+
+    <!-- Простой скрипт для мобильного меню (по желанию, здесь не реализован) -->
+</body>
+</html>
