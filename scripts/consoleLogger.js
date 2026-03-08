@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     console.clear();    
 
-    console.log('Имя и фамилия:', formData.fullname);
+    console.log('Имя и фамилия:', formData.name);
     console.log('Телефон:', formData.phone);
     console.log('Email:', formData.email);
     console.log('Тема:', formData.subject);
